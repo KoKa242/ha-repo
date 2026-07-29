@@ -9,6 +9,10 @@ _LOGGER = logging.getLogger(__name__)
 
 DOMAIN = "microha"
 
+async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
+    """Set up the MicroHA component from YAML."""
+    return True
+
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     """Set up MicroHA Gateway from a config entry."""
     _LOGGER.info("Initializing MicroHA Gateway HACS integration")
