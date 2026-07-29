@@ -7,7 +7,7 @@
       }
     },
     "abort": {
-      "already_configured": "MicroHA Gateway is already configured."
+      "single_instance_allowed": "MicroHA Gateway is already configured. Only a single instance is needed."
     }
   }
 }
