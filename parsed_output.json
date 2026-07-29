@@ -1,0 +1,468 @@
+{
+  "Isp Ccd06A": {
+    "actuators": [
+      {
+        "id": "light.isp_ccd06a",
+        "name": "ISP-CCD06A",
+        "type": "light",
+        "state": "off",
+        "actions": [
+          "turn_on",
+          "turn_off",
+          "toggle"
+        ],
+        "brightness": null
+      }
+    ],
+    "sensors": [],
+    "actions": [
+      "turn_on",
+      "turn_off",
+      "toggle"
+    ]
+  },
+  "Living Room Living Room": {
+    "actuators": [
+      {
+        "id": "media_player.living_room_living_room",
+        "name": "Living Room",
+        "type": "media_player",
+        "state": "idle",
+        "actions": [
+          "media_play",
+          "media_pause",
+          "media_play_pause",
+          "volume_set",
+          "volume_mute"
+        ]
+      },
+      {
+        "id": "remote.living_room_living_room",
+        "name": "Living Room",
+        "type": "remote",
+        "state": "on",
+        "actions": [
+          "turn_on",
+          "turn_off"
+        ]
+      }
+    ],
+    "sensors": [],
+    "actions": [
+      "media_play",
+      "media_pause",
+      "media_play_pause",
+      "volume_set",
+      "volume_mute",
+      "turn_on",
+      "turn_off"
+    ]
+  },
+  "Passwords": {
+    "actuators": [],
+    "sensors": [
+      {
+        "id": "sensor.passwords_certificate_expiry",
+        "name": "Passwords Срок действия сертификата",
+        "type": "sensor",
+        "state": "37",
+        "actions": [],
+        "unit": "d",
+        "class": "duration"
+      },
+      {
+        "id": "sensor.passwords_response_time",
+        "name": "Passwords Время отклика",
+        "type": "sensor",
+        "state": "65",
+        "actions": [],
+        "unit": "ms",
+        "class": "duration"
+      },
+      {
+        "id": "sensor.passwords_status",
+        "name": "Passwords Статус",
+        "type": "sensor",
+        "state": "up",
+        "actions": [],
+        "class": "enum"
+      },
+      {
+        "id": "sensor.passwords_monitor_type",
+        "name": "Passwords Monitor type",
+        "type": "sensor",
+        "state": "http",
+        "actions": [],
+        "class": "enum"
+      },
+      {
+        "id": "sensor.passwords_monitored_url",
+        "name": "Passwords Отслеживаемый URL-адрес",
+        "type": "sensor",
+        "state": "https://vault.voidstack.space/",
+        "actions": []
+      }
+    ],
+    "actions": []
+  },
+  "Pastebin": {
+    "actuators": [],
+    "sensors": [
+      {
+        "id": "sensor.pastebin_certificate_expiry",
+        "name": "Pastebin Срок действия сертификата",
+        "type": "sensor",
+        "state": "40",
+        "actions": [],
+        "unit": "d",
+        "class": "duration"
+      },
+      {
+        "id": "sensor.pastebin_response_time",
+        "name": "Pastebin Время отклика",
+        "type": "sensor",
+        "state": "19",
+        "actions": [],
+        "unit": "ms",
+        "class": "duration"
+      },
+      {
+        "id": "sensor.pastebin_status",
+        "name": "Pastebin Статус",
+        "type": "sensor",
+        "state": "up",
+        "actions": [],
+        "class": "enum"
+      },
+      {
+        "id": "sensor.pastebin_monitor_type",
+        "name": "Pastebin Monitor type",
+        "type": "sensor",
+        "state": "http",
+        "actions": [],
+        "class": "enum"
+      },
+      {
+        "id": "sensor.pastebin_monitored_url",
+        "name": "Pastebin Отслеживаемый URL-адрес",
+        "type": "sensor",
+        "state": "https://paste.voidstack.space/",
+        "actions": []
+      }
+    ],
+    "actions": []
+  },
+  "Homebox": {
+    "actuators": [],
+    "sensors": [
+      {
+        "id": "sensor.homebox_certificate_expiry",
+        "name": "Homebox Срок действия сертификата",
+        "type": "sensor",
+        "state": "42",
+        "actions": [],
+        "unit": "d",
+        "class": "duration"
+      },
+      {
+        "id": "sensor.homebox_status",
+        "name": "Homebox Статус",
+        "type": "sensor",
+        "state": "up",
+        "actions": [],
+        "class": "enum"
+      },
+      {
+        "id": "sensor.homebox_monitor_type",
+        "name": "Homebox Monitor type",
+        "type": "sensor",
+        "state": "http",
+        "actions": [],
+        "class": "enum"
+      },
+      {
+        "id": "sensor.homebox_monitored_url",
+        "name": "Homebox Отслеживаемый URL-адрес",
+        "type": "sensor",
+        "state": "https://home.voidstack.space/",
+        "actions": []
+      }
+    ],
+    "actions": []
+  },
+  "Minecraft Server Friends": {
+    "actuators": [],
+    "sensors": [
+      {
+        "id": "sensor.minecraft_server_friends_response_time",
+        "name": "Minecraft Server Friends Время отклика",
+        "type": "sensor",
+        "state": "1",
+        "actions": [],
+        "unit": "ms",
+        "class": "duration"
+      },
+      {
+        "id": "sensor.minecraft_server_friends_status",
+        "name": "Minecraft Server Friends Статус",
+        "type": "sensor",
+        "state": "up",
+        "actions": [],
+        "class": "enum"
+      },
+      {
+        "id": "sensor.minecraft_server_friends_monitor_type",
+        "name": "Minecraft Server Friends Monitor type",
+        "type": "sensor",
+        "state": "gamedig",
+        "actions": [],
+        "class": "enum"
+      },
+      {
+        "id": "sensor.minecraft_server_friends_monitored_hostname",
+        "name": "Minecraft Server Friends Отслеживаемое имя хоста",
+        "type": "sensor",
+        "state": "mc.voidstack.space",
+        "actions": []
+      },
+      {
+        "id": "sensor.minecraft_server_friends_monitored_port",
+        "name": "Minecraft Server Friends Отслеживаемый порт",
+        "type": "sensor",
+        "state": "25565",
+        "actions": []
+      }
+    ],
+    "actions": []
+  },
+  "Rpi Monitor": {
+    "actuators": [],
+    "sensors": [
+      {
+        "id": "sensor.rpi_monitor_status",
+        "name": "Rpi Monitor Статус",
+        "type": "sensor",
+        "state": "up",
+        "actions": [],
+        "class": "enum"
+      },
+      {
+        "id": "sensor.rpi_monitor_monitor_type",
+        "name": "Rpi Monitor Monitor type",
+        "type": "sensor",
+        "state": "http",
+        "actions": [],
+        "class": "enum"
+      },
+      {
+        "id": "sensor.rpi_monitor_monitored_url",
+        "name": "Rpi Monitor Отслеживаемый URL-адрес",
+        "type": "sensor",
+        "state": "http://100.116.103.55:5000/traffic",
+        "actions": []
+      }
+    ],
+    "actions": []
+  },
+  "Weather": {
+    "actuators": [],
+    "sensors": [
+      {
+        "id": "weather.forecast_home",
+        "name": "Forecast Home",
+        "type": "weather",
+        "state": "sunny",
+        "actions": []
+      }
+    ],
+    "actions": []
+  },
+  "Contact Sensor Door": {
+    "actuators": [],
+    "sensors": [
+      {
+        "id": "binary_sensor.contact_sensor_door",
+        "name": "Door Дверь",
+        "type": "binary_sensor",
+        "state": "off",
+        "actions": [],
+        "class": "door"
+      }
+    ],
+    "actions": []
+  },
+  "Blaupunkt Smart E27 Mc": {
+    "actuators": [
+      {
+        "id": "light.blaupunkt_smart_e27_mc",
+        "name": "Lamp",
+        "type": "light",
+        "state": "off",
+        "actions": [
+          "turn_on",
+          "turn_off",
+          "toggle"
+        ],
+        "brightness": null
+      }
+    ],
+    "sensors": [],
+    "actions": [
+      "turn_on",
+      "turn_off",
+      "toggle"
+    ]
+  },
+  "Wifi Plug": {
+    "actuators": [
+      {
+        "id": "switch.wifi_plug_child_lock",
+        "name": "Fan Блокировка от детей",
+        "type": "switch",
+        "state": "off",
+        "actions": [
+          "turn_on",
+          "turn_off",
+          "toggle"
+        ]
+      },
+      {
+        "id": "switch.wifi_plug_socket_1",
+        "name": "Fan",
+        "type": "switch",
+        "state": "off",
+        "actions": [
+          "turn_on",
+          "turn_off",
+          "toggle"
+        ],
+        "class": "outlet"
+      }
+    ],
+    "sensors": [
+      {
+        "id": "sensor.wifi_plug_current",
+        "name": "Fan Ток",
+        "type": "sensor",
+        "state": "0.0",
+        "actions": [],
+        "unit": "A",
+        "class": "current"
+      },
+      {
+        "id": "sensor.wifi_plug_power",
+        "name": "Fan Мощность",
+        "type": "sensor",
+        "state": "0.0",
+        "actions": [],
+        "unit": "W",
+        "class": "power"
+      },
+      {
+        "id": "sensor.wifi_plug_voltage",
+        "name": "Fan Напряжение",
+        "type": "sensor",
+        "state": "236.8",
+        "actions": [],
+        "unit": "V",
+        "class": "voltage"
+      },
+      {
+        "id": "sensor.wifi_plug_total_energy",
+        "name": "Fan Всего энергия",
+        "type": "sensor",
+        "state": "0.3",
+        "actions": [],
+        "unit": "kWh",
+        "class": "energy"
+      }
+    ],
+    "actions": [
+      "turn_on",
+      "turn_off",
+      "toggle"
+    ]
+  },
+  "T34 Smart Plug": {
+    "actuators": [
+      {
+        "id": "switch.t34_smart_plug_switch_1",
+        "name": "Smart Socket Switch 1",
+        "type": "switch",
+        "state": "on",
+        "actions": [
+          "turn_on",
+          "turn_off",
+          "toggle"
+        ],
+        "class": "switch"
+      }
+    ],
+    "sensors": [
+      {
+        "id": "sensor.t34_smart_plug_current",
+        "name": "Smart Socket Ток",
+        "type": "sensor",
+        "state": "0.075",
+        "actions": [],
+        "unit": "A",
+        "class": "current"
+      },
+      {
+        "id": "sensor.t34_smart_plug_power",
+        "name": "Smart Socket Мощность",
+        "type": "sensor",
+        "state": "9.7",
+        "actions": [],
+        "unit": "W",
+        "class": "power"
+      },
+      {
+        "id": "sensor.t34_smart_plug_voltage",
+        "name": "Smart Socket Напряжение",
+        "type": "sensor",
+        "state": "234.4",
+        "actions": [],
+        "unit": "V",
+        "class": "voltage"
+      },
+      {
+        "id": "sensor.t34_smart_plug_total_energy",
+        "name": "Smart Socket Всего энергия",
+        "type": "sensor",
+        "state": "0.097",
+        "actions": [],
+        "unit": "kWh",
+        "class": "energy"
+      }
+    ],
+    "actions": [
+      "turn_on",
+      "turn_off",
+      "toggle"
+    ]
+  },
+  "Contact Sensor": {
+    "actuators": [],
+    "sensors": [
+      {
+        "id": "sensor.contact_sensor_battery",
+        "name": "Door Батарея",
+        "type": "sensor",
+        "state": "100.0",
+        "actions": [],
+        "unit": "%",
+        "class": "battery"
+      },
+      {
+        "id": "sensor.contact_sensor_battery_state",
+        "name": "Door Состояние батареи",
+        "type": "sensor",
+        "state": "high",
+        "actions": [],
+        "class": "enum"
+      }
+    ],
+    "actions": []
+  }
+}

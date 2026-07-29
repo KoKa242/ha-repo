@@ -36,6 +36,10 @@ SYSTEM_KEYWORDS = [
     "sensor.sun_",
     "sensor.traffic_",
     "sensor.backup_",
+    "iphone_",
+    "ipad_",
+    "macbook_",
+    "apple_watch_",
 ]
 
 # Map of supported actions for each domain
