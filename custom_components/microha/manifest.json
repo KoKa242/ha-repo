@@ -2,7 +2,7 @@
   "domain": "microha",
   "name": "MicroHA Gateway",
   "codeowners": [],
-  "config_flow": false,
+  "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/yourusername/microha",
   "integration_type": "hub",

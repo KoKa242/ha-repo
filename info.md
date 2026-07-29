@@ -10,8 +10,6 @@ An ultra-fast and lightweight integration for serving data to weak microcontroll
 5. Allows microcontrollers to call services (toggle, turn_on) with a simple POST request.
 
 ## Getting Started
-After installing the component, add the following line to your `configuration.yaml`:
-```yaml
-microha:
-```
-Then restart Home Assistant. Full documentation is available on GitHub.
+After installing the component via HACS and restarting Home Assistant, go to **Settings** -> **Devices & Services**, click **Add Integration**, and search for **MicroHA Gateway**.
+
+Full documentation is available on GitHub.

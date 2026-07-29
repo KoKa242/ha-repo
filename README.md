@@ -21,11 +21,9 @@ The standard Home Assistant REST API returns heavy JSON responses, parsing which
 5. Select the **Integration** category and click Add.
 6. Search for `MicroHA Gateway` in HACS and click **Download**.
 7. Restart Home Assistant.
-8. Add the following line to your `configuration.yaml`:
-   ```yaml
-   microha:
-   ```
-9. Restart Home Assistant one more time.
+8. Go to **Settings** -> **Devices & Services**.
+9. Click **Add Integration** in the bottom right corner.
+10. Search for **MicroHA Gateway** and click to set it up.
 
 ## Usage (API for ESP32)
 
