@@ -4,7 +4,7 @@ from typing import Any, Dict, List
 
 from homeassistant.core import HomeAssistant
 from homeassistant.components.http import HomeAssistantView
-from homeassistant.const import HTTP_OK, HTTP_BAD_REQUEST, HTTP_INTERNAL_SERVER_ERROR
+from http import HTTPStatus
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -161,20 +161,20 @@ class MicroHAView(HomeAssistantView):
             else:
                 group["sensors"].append(compact_item)
                 
-        return self.json(groups, status_code=HTTP_OK)
+        return self.json(groups, status_code=HTTPStatus.OK)
 
     async def post(self, request):
         """Handle POST requests to control devices."""
         try:
             body = await request.json()
         except ValueError:
-            return self.json({"error": "Invalid JSON"}, status_code=HTTP_BAD_REQUEST)
+            return self.json({"error": "Invalid JSON"}, status_code=HTTPStatus.BAD_REQUEST)
             
         entity_id = body.get("entity_id")
         action = body.get("action")
         
         if not entity_id or not action:
-             return self.json({"error": "entity_id and action are required"}, status_code=HTTP_BAD_REQUEST)
+             return self.json({"error": "entity_id and action are required"}, status_code=HTTPStatus.BAD_REQUEST)
              
         domain = entity_id.split(".")[0]
         service_data = {"entity_id": entity_id}
@@ -192,7 +192,7 @@ class MicroHAView(HomeAssistantView):
                 service_data,
                 blocking=False
             )
-            return self.json({"status": "success", "message": f"Command {action} sent to {entity_id}"}, status_code=HTTP_OK)
+            return self.json({"status": "success", "message": f"Command {action} sent to {entity_id}"}, status_code=HTTPStatus.OK)
         except Exception as e:
             _LOGGER.error(f"MicroHA Error: Service call failed: {e}")
-            return self.json({"error": str(e)}, status_code=HTTP_INTERNAL_SERVER_ERROR)
+            return self.json({"error": str(e)}, status_code=HTTPStatus.INTERNAL_SERVER_ERROR)
