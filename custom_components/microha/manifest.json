@@ -1,0 +1,12 @@
+{
+  "domain": "microha",
+  "name": "MicroHA Gateway",
+  "codeowners": [],
+  "config_flow": false,
+  "dependencies": [],
+  "documentation": "https://github.com/yourusername/microha",
+  "integration_type": "hub",
+  "iot_class": "local_push",
+  "requirements": [],
+  "version": "1.0.0"
+}
